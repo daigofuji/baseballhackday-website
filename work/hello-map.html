@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVffwLWgkCRRhjkcpchALtADdUNmD5qLs&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+      
+      var myLatlng = new google.maps.LatLng(42.31604341032714, -71.0488709807396);
+		var myOptions = {
+		  zoom: 14,
+		  center: myLatlng,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP,
+		}
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		var image = '../img/hackday_40.png';
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+ 			icon: image
+ 		});
+		
+		// To add the marker to the map, call setMap();
+		marker.setMap(map);
+		
+		
+       
+		  
+   /*     var myOptions = {
+          center: new google.maps.LatLng(42.31604341032714, -71.0488709807396),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            myOptions); */
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="height:300px"></div>
+  </body>
+</html>
