@@ -32,9 +32,9 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { margin: 0; font-size: 15px; line-height: 1.46666666; }
 
-body, button, input, select, textarea { font-family: 'Montserrat', sans-serif; color: #543; }
+body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #210; }
 
 /* 
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -42,8 +42,8 @@ body, button, input, select, textarea { font-family: 'Montserrat', sans-serif; c
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #ffe373; color: #fff; text-shadow: none; }
-::selection { background: #ffe373; color: #fff; text-shadow: none; }
+::-moz-selection { background: #ffe373; color: #000; text-shadow: none; }
+::selection { background: #ffe373; color: #000; text-shadow: none; }
 
 
 /* =============================================================================
@@ -215,8 +215,8 @@ img {max-width:100%;}
 
 #qr { display:none; }
 /* Google font api */
-body { font-family: 'Montserrat', sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Passion One', 'Arial Black', sans-serif; margin-top:.3em; margin-bottom:0;}
+body { font-family: 'Open Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Passion One', 'Arial Black', sans-serif; margin-top:.3em; margin-bottom:0; color:#543;}
 header h1 {font-size:2.1em;text-align: center; text-transform:uppercase;}
 header h1 br, header h4 br { display:none; }
 header h4 {font-size:1.5em;line-height:0.8em;text-align: center;}
@@ -257,6 +257,8 @@ dd {margin-bottom: 1em;}
 
 footer {background: #fc0 url('/img/noise.png'); padding: 1.5em;}
 
+/* forum header */
+		header #minilogo {display:none; }
 
 
 /* ==|== non-semantic helper classes ========================================
@@ -299,7 +301,7 @@ footer {background: #fc0 url('/img/noise.png'); padding: 1.5em;}
 		header #info {float:left; width:48.076923%; margin:0; padding:0; line-height:1em; }
 			header #info #detail { background: #fc0 url('/img/noise.png'); margin-top:0px; padding:0;}
 			header #info #detail #detail-inner { margin: 0 15px; }
-		header h1 { font-size:5em; margin:0 0 -16px; padding:0; text-align:left; line-height:0.65em;}
+		header h1 { font-size:5em; margin:0 0 -16px; padding:0; text-align:left; line-height:0.63em;}
 		header h1 br, header h4 br { display:block; }
 
 		h2 + p {margin-top: -2em; }
@@ -310,13 +312,30 @@ footer {background: #fc0 url('/img/noise.png'); padding: 1.5em;}
 			header #info #detail h4#etime { font-size:1.7em; }
 			header #info #detail h4#eplace { font-size:2.6em; line-height:0.8em;}
 			header #info #detail h4#eaddress { font-size:1.5em; text-transform:none;line-height:0.9em}
+
+/* forum header */
+		header #minilogo {display:block; float:left; width:20.480769%; margin-right:1.4423077%;}
+		header #miniinfo {float:left; width:78.076923%; margin:0; padding:0; line-height:1em; }
+			header #miniinfo #detail { background: #fc0 url('/img/noise.png'); margin-top:0px; padding:0;}
+			header #miniinfo #detail #detail-inner { margin: 0 15px; }
+		header #miniinfo h1 { font-size:5em; margin:0 0 -16px; padding:0; text-align:left; line-height:0.65em;}
+		header #miniinfo h1 br, #miniinfo header h4 br { display:block; }
+
+		header #miniinfo #detail h4 { font-size:1.5em; margin:0;padding:0;  text-align:left; text-transform:uppercase; line-height:1.2em; }
+		header #miniinfo #detail h4 a, header #info #detail h4 a:visited { color:#543; }
+			header #miniinfo #detail h4#edate { font-size:3.3em; letter-spacing:-1px; line-height:0.8em;}
+			header #miniinfo #detail h4#etime { font-size:1.7em; }
+			header #miniinfo #detail h4#eplace { font-size:2.6em; line-height:0.8em;}
+			header #miniinfo #detail h4#eaddress { font-size:1.5em; text-transform:none;line-height:0.9em}
+			header #miniinfo #qr {display:none;}
+
 		
 	#qr { float:right; width: 23%; display:block;}
 	h2 { font-size:2.5em; text-shadow: 1px 2px 0 #fc0;  }
 	h3 { font-size:1.5em; }
 	#hackday, #homerun { text-align:center; clear:right;}
 	#container { width:95%; margin: 0 auto;}
-	#main p, #main h3 {margin-left:28%;}
+	#main p, #main h3, #main #disqus_thread {margin-left:28%;}
 	#main dl, #main ul, #main address {margin-left:32%;}
 	#map_canvas { height:300px; }
 	
