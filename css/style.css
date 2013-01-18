@@ -331,7 +331,7 @@ footer {background: #fc0 url('/img/noise.png'); padding: 1.5em;}
 
 		
 	#qr { float:right; width: 23%; display:block;}
-	h2 { font-size:2.5em; text-shadow: 1px 2px 0 #fc0;  }
+	h2 { font-size:2.5em; text-shadow: 1px 2px 0 #fc0; margin-top:1em; }
 	h3 { font-size:1.5em; }
 	#hackday, #homerun { text-align:center; clear:right;}
 	#container { width:95%; margin: 0 auto;}
