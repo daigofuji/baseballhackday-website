@@ -229,6 +229,8 @@ hr { border-top: 1px solid #fc0;}
 /* base color */
 .brown { color:#543; }
 .yellow { color:#fc0; }
+
+.gray { color:#999; }
 .orange, .linkcolor { color:#ff8900; }
 .darkyellow, .vlinkcolor { color:#a68500; }
 .darkorange, hlinkcolor {color:#a65900; }
@@ -296,7 +298,7 @@ footer {background: #fc0 url('/img/noise.png'); padding: 1.5em;}
 	header { overflow:hidden; }	  
 		header #logo {float:left; width:50.480769%; margin-right:1.4423077%;}
 		header #info {float:left; width:48.076923%; margin:0; padding:0; line-height:1em; }
-			header #info #detail { background: #fc0 url('/img/noise.png'); margin-top:0px; padding:0;}
+			header #info #detail { background: #999 url('/img/noise.png'); margin-top:0px; padding:0;}
 			header #info #detail #detail-inner { margin: 0 15px; }
 		header h1 { font-size:5em; margin:0 0 -16px; padding:0; text-align:left; line-height:0.65em;}
 		header h1 br, header h4 br { display:block; }
