@@ -4,7 +4,6 @@
 $(document).ready(function() {
 
 	$("a.slide").anchorAnimate();
-	getgmap();
 	
 });
 
@@ -30,21 +29,16 @@ jQuery.fn.anchorAnimate = function(settings) {
 }
 
 
-function getgmap() {
-        var myLatlng = new google.maps.LatLng(42.31604341032714, -71.0488709807396);
-		var myOptions = {
-		  zoom: 14,
-		  center: myLatlng,
-		  mapTypeId: google.maps.MapTypeId.ROADMAP,
-		}
-		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-		var image = 'img/hackday_40.png';
-		var marker = new google.maps.Marker({
-			position: myLatlng,
- 			icon: image
- 		});
+
+$(window).scroll(function(){ 
+		var offset = 0;
+		var sticky = false;
+		var top = $(window).scrollTop();
 		
-		// To add the marker to the map, call setMap();
-		marker.setMap(map);
-		
+		if ($("#main").offset().top < top) {
+			$("nav").addClass("sticky");
+			sticky = true;
+		} else {
+			$("nav").removeClass("sticky");
 		}
+	});

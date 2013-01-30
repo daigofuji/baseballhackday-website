@@ -47,15 +47,10 @@
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".mainnav">
 
   <div id="container">
     <header>
-    	<div class="addthis_toolbox addthis_default_style sharetool">
-		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-		<a class="addthis_button_tweet"></a>
-		<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-		</div>
 
 			<div id="savethedate">
 				<h3>Get <a href="http://eepurl.com/tNLSz">notified</a> when registration opens, and <a href="forum.html">participate</a> in a forum!</a></h3>
@@ -86,24 +81,32 @@
 					</div>
 				</div>
 				
+
+			</div><!-- #info -->
+
+
+		</div><!-- #hackday -->
+    </header>
+
+	<nav>
+		<div class="navwrap">
 				<div class="mainnav">
 					<ul class="navlist">
-						<li><a class="slide" href="#winner">Recap</a></li>
+						<!-- <li><a class="slide" href="#winner">Recap</a></li> -->
 						<li><a class="slide" href="#hackday">Home</a></li>
 						<li><a class="slide" href="#schedule">Schedule</a></li>
-						<li><a class="slide" href="#venue">The Venue</a></li>
 						<li><a class="slide" href="#sponsors">Sponsors</a></li>
+						<li><a class="slide" href="#venue">The Venue</a></li>
 						<li><a class="slide" href="#resources">Resources</a></li>
 						<li><a class="slide" href="#inspirations">Inspirations</a></li>
 						<li><a class="slide" href="#forum">Forum (beta)</a></li>
-						<li><a href="2012">Last year</a></li>
+						<li><a class="slide" href="#history">History</a></li>
 						<!-- <li><a href="http://baseballhackday.eventbrite.com/">Register</a></li> -->
 					</ul>
 				</div>
-				
-			</div><!-- #info -->
-		</div><!-- #hackday -->
-    </header>
+		</div><!-- /.navwrap -->
+	</nav>
+
     <div id="main" role="main">
 
     
@@ -145,14 +148,15 @@
 		<div style="margin-left: 28%;width:72%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=2679228645&amp;ref=etckt" scrolling="auto" allowtransparency="true" style="border:none;margin:5px;height:192px; width:100%;"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt" >Event management</a><span style="color:#ddd;" > for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://baseballhackday.eventbrite.com?ref=etckt" >Boston Baseball Hack Day 2012</a><span style="color:#ddd;" > powered by </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt" >Eventbrite</a></div></div>
 		-->
 		
-		<h2 id="winner">
+		<!--<h2 id="winner">
 			2012 RECAP
 		</h2>
 
 		<p>2012 event was success and over 35 hackers participated. Read the recap of the event from <a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/03/clever_concepts.html">Boston.com by Matt Pepin: "Clever concepts created at Boston Baseball Hack Day"</a> and on <a href="http://beta.boston.com/post/20120915962/baseball-hack-day">Beta.Boston.com: "Baseball Hack Day Recap"</a>.</p>
 		<p>Photos: <a href="http://www.flickr.com//groups/1917790@N24/pool/show/">flickr</a>, <a href="http://meetupbos.hackshackers.com/photos/6993982/">meetup</a></p>
 		<p>Projects: </h3> <a href="http://bit.ly/rally-cry">Rally Cry</a> (2012 winner), <a href="http://wwar.herokuapp.com">Red Sox Wall of wWar</a>, <a href="http://whatsthatinhotdogs.com">What's that in hot dogs?</a>, <a href="htp://www.fan-cheer.com">Fan Cheer</a>, <a href="http://baseballliterature.com">baseballliterature.com</a>, <a href="http://baseballscrapbook.info">Baseball Scrap Book</a>, <a href="http://stateofrivalry.com">State of Rivalry</a>. See more on <a href="/2012/">2012 page</a>.</p>
-		
+		 -->
+
 		<h2 id="schedule">
 			SCHEDULE
 		</h2>
@@ -164,9 +168,9 @@
 				<dd>Registration, meet and greet, and coffee.</dd>
 			<dt>10:00-10:30</dt>
 				<dd>Welcome, introductions, and pitch</dd>
-			<dt>10:30-6:30</dt>
-				<dd>Code! (Lunch will be served)</dd>
-			<dt>6:30-7:00</dt>
+			<dt>10:30-6:00</dt>
+				<dd>Code! (Lunch will be served -- sponsored by Stattleship)</dd>
+			<dt>6:00-7:00</dt>
 				<dd>Presentation, judging and awards</dd>
 			<dt>*7:30</dt>
 				<dd>optional beer social -- location to be decided later.</dd>					
@@ -258,7 +262,13 @@
 		<p><a href="forum.html">Experimental discussion forum</a> powered by Disqus. Because we have "one-day" format, some find it hard to pair up, flesh out new concept, and execute in that span. This is our social forum so people could say if you are part of a team or not before the event, and connect people to talk and prep if they aren't part of a team. Remember, your ideas need to be compact and succinct. <a href="forum.html">Have fun!</a></p>
 		<!--<p>The event is free. <a href="http://baseballhackday.eventbrite.com/">Register Now</a> from Eventbrite page.</p>-->
 
-
+		<h2 id="history">
+			History
+		</h2>
+		<p>Baseball Hack Day was born out of a Boston area news &amp; geek meetup group <a href="http://meetupbos.hackshackers.com/">Hacks/Hackers</a> and <a href="http://chapters.sabr.org/boston/">Society of American Baseball Research Boston Chapter</a> after watching terrible collapse of 2011 Red Sox season. Our first event was held at The Boston Globe on March 24, 2012. </p> 
+		<p>Our inaugural event was a success, and over 35 hackers participated. Read the recap of the event from <a href="http://www.boston.com/sports/baseball/redsox/extras/extra_bases/2012/03/clever_concepts.html">Boston.com by Matt Pepin: "Clever concepts created at Boston Baseball Hack Day"</a> and on <a href="http://beta.boston.com/post/20120915962/baseball-hack-day">Beta.Boston.com: "Baseball Hack Day Recap"</a>.</p>
+		<p>Photos: <a href="http://www.flickr.com//groups/1917790@N24/pool/show/">flickr</a>, <a href="http://meetupbos.hackshackers.com/photos/6993982/">meetup</a></p>
+		<p>Projects: </h3> <a href="http://bit.ly/rally-cry">Rally Cry</a> (2012 winner), <a href="http://wwar.herokuapp.com">Red Sox Wall of wWar</a>, <a href="http://whatsthatinhotdogs.com">What's that in hot dogs?</a>, <a href="htp://www.fan-cheer.com">Fan Cheer</a>, <a href="http://baseballliterature.com">baseballliterature.com</a>, <a href="http://baseballscrapbook.info">Baseball Scrap Book</a>, <a href="http://stateofrivalry.com">State of Rivalry</a>. See more on <a href="/2012/">2012 page</a>.</p>
 
 
 		<div id="homerun"><img src="img/homerun.png" alt="Join Baseball Hack Day!"/></div>
@@ -354,16 +364,14 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVffwLWgkCRRhjkcpchALtADdUNmD5qLs&amp;sensor=false">
-    </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js"><\/script>')</script>
+  
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
-  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e7db41d045e7543"></script>
-  <script type="text/javascript">var switchTo5x=false;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'fc6f0d71-ed6c-4377-81ae-4d1a80d5d369'});</script>
+<script type="text/javascript">var switchTo5x=false;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'fc6f0d71-ed6c-4377-81ae-4d1a80d5d369'});</script>
   <!-- end scripts-->
 
 	
